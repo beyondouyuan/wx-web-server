@@ -1,0 +1,64 @@
+{
+  "group": {
+    "css": "/static/group.css",
+    "js": "/static/js/group.a72d2f20.js"
+  },
+  "notice-detail": {
+    "css": "/static/notice-detail.css",
+    "js": "/static/js/notice-detail.c2549567.js"
+  },
+  "home": {
+    "css": "/static/home.css",
+    "js": "/static/js/home.c45bb98b.js"
+  },
+  "join": {
+    "css": "/static/join.css",
+    "js": "/static/js/join.1624f6bf.js"
+  },
+  "news": {
+    "css": "/static/news.css",
+    "js": "/static/js/news.5aafbb66.js"
+  },
+  "news-detail": {
+    "css": "/static/news-detail.css",
+    "js": "/static/js/news-detail.88b76a5a.js"
+  },
+  "notice": {
+    "css": "/static/notice.css",
+    "js": "/static/js/notice.0d6f9f9c.js"
+  },
+  "constitution": {
+    "css": "/static/constitution.css",
+    "js": "/static/js/constitution.e6fe1732.js"
+  },
+  "resource": {
+    "css": "/static/resource.css",
+    "js": "/static/js/resource.a0446f0e.js"
+  },
+  "resource-detail": {
+    "css": "/static/resource-detail.css",
+    "js": "/static/js/resource-detail.9abe3df2.js"
+  },
+  "resource-publish": {
+    "css": "/static/resource-publish.css",
+    "js": "/static/js/resource-publish.657e58a9.js"
+  },
+  "runtime": {
+    "js": "/static/js/runtime.ff287fb8.js"
+  },
+  "": {
+    "jpg": [
+      "/static/assets/images/join_headerd6fba37.jpg",
+      "/static/assets/images/news_headerdb8f6dd.jpg",
+      "/static/assets/images/notice_header4e61b74.jpg",
+      "/static/assets/images/resource_headercb46e1a.jpg"
+    ],
+    "png": [
+      "/static/assets/images/no_data0a34af4.png",
+      "/static/assets/images/tips0222954.png"
+    ]
+  },
+  "metadata": {
+    "build-time": 1603623434435
+  }
+}

@@ -1,0 +1,30 @@
+{# HTML5 #}
+<!doctype html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-dns-prefetch-control" content="on">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="#F3F3F3">
+    {# 是否启用 WebApp 全屏模式，删除苹果默认的工具栏和菜单栏 #}
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    {# "添加到主屏幕“后，全屏显示 #}
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="white">
+    <title>{{Config.title}}</title>
+    <meta name="description" content="{{Config.description}}">
+    <meta name="keywords" content="{{Config.keywords}}">
+    {% include "part/remjs.nj" %}
+    {{ helper.pageStyleAssets(Config.pageName) | safe }}
+</head>
+<body ontouchstart="">
+<div id="root"></div>
+
+{{ helper.pageScriptAssets(Config.pageName) | safe }}
+
+</body>
+</html>

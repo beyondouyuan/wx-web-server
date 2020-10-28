@@ -1,0 +1,43 @@
+version: "3.7"
+services:
+  mx-web-client-local:
+    container_name: mx-web-client-local
+    hostname: mx-web-client-local
+    image: node:10.21.0
+    expose:
+      - 7002
+    ports:
+      - 7002:7002
+    volumes:
+      - .:/data
+    entrypoint: ./chore/client.sh
+    environment:
+      CLIENT_HOSTNAME: "mx-web-client-local"
+      CLIENT_PORT: 7002
+      SEVER_HOSTNAME: "mx-web-server-local"
+      SEVER_PORT: 7001
+    networks:
+      - bridge
+
+  mx-web-server-local:
+    container_name: mx-web-server-local
+    hostname: mx-web-server-local
+    image: node:10.21.0
+    ports:
+      - 7001:7001
+    volumes:
+      - .:/data
+    entrypoint: ./chore/server.sh
+    environment:
+      CLIENT_HOSTNAME: "mx-web-client-local"
+      CLIENT_PORT: 7002
+      SEVER_HOSTNAME: "mx-web-server-local"
+      SEVER_PORT: 7001
+    depends_on:
+      - mx-web-client-local
+    networks:
+      - bridge
+
+networks:
+  bridge:
+    driver: bridge
